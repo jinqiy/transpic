@@ -22,5 +22,12 @@ $email_body = "You have received a new message from your website's contact form.
 $headers = "From: noreply@transpic.linuxd.org\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
+
+// send mail by my phpfog server 
+function sendmail(){
+}
+https://japi.ap01.aws.af.cm/st/noti.php?comment=248restarted&ak=d8n8s2ij4t4w4iw4m4i2c5
+sendmail();
+
 return true;			
 ?>

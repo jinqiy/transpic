@@ -23,17 +23,24 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                //url: "./bin/contact_me.php",
-                url: "https://japi.ap01.aws.af.cm/st/noti.php",
+                url: "./bin/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
-                    subject: phone,
-                    from: email,
-                    comment: message,
-		    ak: 'd8n8s2ij4t4w4iw4m4i2c5',
-		    email: 'transpic@contact',
+                    phone: phone,
+                    email: email,
+                    message: message
                 },
+                //url: "https://japi.ap01.aws.af.cm/st/noti.php",
+                //type: "POST",
+                //data: {
+                //    name: name,
+                //    subject: phone,
+                //    from: email,
+                //    comment: message,
+		//    ak: 'd8n8s2ij4t4w4iw4m4i2c5',
+		//    email: 'transpic@contact'
+                //},
                 cache: false,
                 success: function() {
                     // Success message
